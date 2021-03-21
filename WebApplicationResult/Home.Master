@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="WebApplicationResult.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="jumbotron">
+                <div class="col-md-12">
+                    <a href="List.aspx" class="btn btn-primary">Listele</a>
+                </div>
+            </div>
+            <div class ="row">
+                <div class="col-md-12"">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
